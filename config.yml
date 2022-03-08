@@ -39,7 +39,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: I write stuff
     author: Syed Zayyan Masud
     # author: ["Me", "You"] # multiple authors
     comments: true
@@ -53,8 +53,7 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
-    # comments: false
-    images: ["papermod-cover.png"]
+    images: ["profile_pic.jpg"]
 
     profileMode:
         enabled: false
@@ -86,7 +85,7 @@ params:
         - name: github
           url: "https://github.com/syedzayyan/"
         - name: linkedin
-          url: "https://youtube.com/c/ZayyanMasud"
+          url: "https://www.linkedin.com/in/zayyan-masud-5988ba19b/"
         - name: instagram
           url: "https://instagram.com/syed._.zayyan"
         - name: youtube
