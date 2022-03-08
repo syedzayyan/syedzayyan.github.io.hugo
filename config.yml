@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://syedzayyan.com/"
 title: Existential with Zayyan
 paginate: 5
 theme: PaperMod
@@ -42,7 +42,7 @@ params:
     description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
     author: Syed Zayyan Masud
     # author: ["Me", "You"] # multiple authors
-
+    comments: true
     defaultTheme: dark
     # disableThemeToggle: true
     ShowShareButtons: true
