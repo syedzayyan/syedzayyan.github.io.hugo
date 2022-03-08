@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>show off on Existential with Zayyan</title>
-    <link>https://syedzayyan.github.io/tags/show-off/</link>
+    <link>/tags/show-off/</link>
     <description>Recent content in show off on Existential with Zayyan</description>
     <image>
-      <url>https://syedzayyan.github.io/papermod-cover.png</url>
-      <link>https://syedzayyan.github.io/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Feb 2021 08:15:51 +0000</lastBuildDate><atom:link href="https://syedzayyan.github.io/tags/show-off/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 08:15:51 +0000</lastBuildDate><atom:link href="/tags/show-off/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RasPi Weather Station</title>
-      <link>https://syedzayyan.github.io/posts/raspi-weather-station/</link>
+      <link>/posts/raspi-weather-station/</link>
       <pubDate>Thu, 18 Feb 2021 08:15:51 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/raspi-weather-station/</guid>
+      <guid>/posts/raspi-weather-station/</guid>
       <description>Introduction I got my Raspberry Pi Zero W last year. Since then it had been collecting dust. I should have considered my experience with programming and the few stints that had happened along the way before making such an impulse buy. But, hey! That&amp;rsquo;s why they are called impulses. However, COVID happened, and Coursera was almost free for half the year. I enrolled in a bunch of courses, I built a few things along the way, including the website you are on right now.</description>
     </item>
     

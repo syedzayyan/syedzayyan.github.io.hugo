@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Existential with Zayyan</title>
-    <link>https://syedzayyan.github.io/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Existential with Zayyan</description>
     <image>
-      <url>https://syedzayyan.github.io/papermod-cover.png</url>
-      <link>https://syedzayyan.github.io/papermod-cover.png</link>
+      <url>papermod-cover.png</url>
+      <link>papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Mar 2022 18:06:01 +0000</lastBuildDate><atom:link href="https://syedzayyan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Mar 2022 18:06:01 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A day in London without the tube</title>
-      <link>https://syedzayyan.github.io/posts/a-day-in-london-without-the-tube/</link>
+      <link>/posts/a-day-in-london-without-the-tube/</link>
       <pubDate>Fri, 04 Mar 2022 18:06:01 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/a-day-in-london-without-the-tube/</guid>
+      <guid>/posts/a-day-in-london-without-the-tube/</guid>
       <description>Our perception of time is strongly linked to our memories. The more I experience things, the more I feel I have grown as a person and spent more time on this planet. The London tube sort of takes away that experience of traveling on foot or on a bus and seeing the city. I feel this way partly because I use the same line everyday, and probably see the same people.</description>
     </item>
     
     <item>
       <title>The world ends?</title>
-      <link>https://syedzayyan.github.io/posts/the-world-ends/</link>
+      <link>/posts/the-world-ends/</link>
       <pubDate>Fri, 25 Feb 2022 23:00:01 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/the-world-ends/</guid>
+      <guid>/posts/the-world-ends/</guid>
       <description>It&amp;rsquo;s just that I put this article elsewhere lol for consideration. Let&amp;rsquo;s see :)</description>
     </item>
     
     <item>
       <title>Errors I came across adding Staticman to my Jekyll Blog for a Comment System</title>
-      <link>https://syedzayyan.github.io/posts/errors-i-came-across-adding-staticman-to-my-jekyll-blog-for-a-comment-system/</link>
+      <link>/posts/errors-i-came-across-adding-staticman-to-my-jekyll-blog-for-a-comment-system/</link>
       <pubDate>Wed, 23 Feb 2022 11:22:01 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/errors-i-came-across-adding-staticman-to-my-jekyll-blog-for-a-comment-system/</guid>
+      <guid>/posts/errors-i-came-across-adding-staticman-to-my-jekyll-blog-for-a-comment-system/</guid>
       <description>There are way better resources that teach you how to add staticman to your blog. You are better off with those ones. Now with the disclaimer out of the way, we can move on with how to deal with errors.
 [GITHUB_READING_FILE] What this basically means, is that staticman cannot find your staticman.yml file in your repository. Now if you are like me, an idiot, you would be thinking that this is in my local repository how do I even&amp;hellip;.</description>
     </item>
     
     <item>
       <title>Love Fight Club</title>
-      <link>https://syedzayyan.github.io/posts/love-fight-club/</link>
+      <link>/posts/love-fight-club/</link>
       <pubDate>Sun, 20 Feb 2022 09:25:00 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/love-fight-club/</guid>
+      <guid>/posts/love-fight-club/</guid>
       <description>🔴 SPOILER ALERT
 Fight Club the movie and the book are one of my favourites of all time. I think the way you perceive the story changes with your age. I felt like writing an appreciation post about the movie this cloudy morning in the aftermath of Eunice. I don&amp;rsquo;t know what that says about me, but the movie does get misunderstood a lot, which I have noticed in various Reddit posts.</description>
     </item>
     
     <item>
       <title>Starting Out</title>
-      <link>https://syedzayyan.github.io/posts/starting-out/</link>
+      <link>/posts/starting-out/</link>
       <pubDate>Fri, 18 Feb 2022 18:06:01 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/starting-out/</guid>
+      <guid>/posts/starting-out/</guid>
       <description>Starting out is always harder than you expect. To be fair, continuing to do something is equally harder. Take blogging for example. I have started a couple of times now thinking I would write something or the other but I never stick to it. However, I did make a differently designed blog in a different language each time. I did land a freelance gig that way, improving my personal portfolios.</description>
     </item>
     
     <item>
       <title>RasPi Weather Station</title>
-      <link>https://syedzayyan.github.io/posts/raspi-weather-station/</link>
+      <link>/posts/raspi-weather-station/</link>
       <pubDate>Thu, 18 Feb 2021 08:15:51 +0000</pubDate>
       
-      <guid>https://syedzayyan.github.io/posts/raspi-weather-station/</guid>
+      <guid>/posts/raspi-weather-station/</guid>
       <description>Introduction I got my Raspberry Pi Zero W last year. Since then it had been collecting dust. I should have considered my experience with programming and the few stints that had happened along the way before making such an impulse buy. But, hey! That&amp;rsquo;s why they are called impulses. However, COVID happened, and Coursera was almost free for half the year. I enrolled in a bunch of courses, I built a few things along the way, including the website you are on right now.</description>
     </item>
     
