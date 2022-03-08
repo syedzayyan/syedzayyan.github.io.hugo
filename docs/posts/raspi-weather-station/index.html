@@ -10,7 +10,7 @@
 <meta name="description" content="Introduction I got my Raspberry Pi Zero W last year. Since then it had been collecting dust. I should have considered my experience with programming and the few stints that had happened along the way before making such an impulse buy. But, hey! That&rsquo;s why they are called impulses. However, COVID happened, and Coursera was almost free for half the year. I enrolled in a bunch of courses, I built a few things along the way, including the website you are on right now.">
 <meta name="author" content="Syed Zayyan Masud">
 <link rel="canonical" href="https://syedzayyan.com/posts/raspi-weather-station/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.55aa566304dce446d625233ddd9ed7482e5b8e7bbaab0da53c518d52eb0841c8.css" integrity="sha256-VapWYwTc5EbWJSM93Z7XSC5bjnu6qw2lPFGNUusIQcg=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.a5126135824a69eec9941a6cac2b6caf35ba2aa9d210b5431bd5100b2bf2109f.css" integrity="sha256-pRJhNYJKae7JlBpsrCtsrzW6KqnSELVDG9UQCyvyEJ8=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://syedzayyan.com/favicon.ico">
@@ -94,7 +94,7 @@
     }
   }
 }
-</script>
+</script><script async defer data-website-id="31b3118b-907a-47b9-8647-dbf5b13180c6" src="https://analysis-syed.herokuapp.com/umami.js"></script>
 </head>
 
 <body class=" dark" id="top">
@@ -334,212 +334,91 @@ start!</p>
     </a>
 </div>
 
-  </footer><form class="js-form form" method="post" action="https://commentz.herokuapp.com/v2/entry/syedzayyan/syedzayyan.github.io/main/comments">
-<a id="comment-form"></a>
-  <input type="hidden" name="options[origin]" value="https://syedzayyan.com/posts/raspi-weather-station/">
-  <input type="hidden" name="options[parent]" value="https://syedzayyan.com/posts/raspi-weather-station/">
-  <input type="hidden" id="comment-replying-to-uid" name="fields[replying_to_uid]" value="">
-  <input type="hidden" name="options[slug]" value=>
-
-  <div class="textfield">
-    <label for="comment-form-message"><h2>Add Comment</h2>
-      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
-    </label>
-  </div>
-
-    <div class="textfield narrowfield">
-      <label for="comment-form-name">Name
-        <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
-      </label>
-    </div>
-
-    <div class="textfield narrowfield">
-      <label for="comment-form-email">E-mail
-        <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
-      </label>
-    </div>
-
-    <div class="textfield narrowfield hp">
-      <label for="hp">
-        <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
-      </label>
-    </div>
-
-
-    <button type="button" class="button" id="cancel-comment-reply-link" style="display: none">
-      Cancel Reply
-    </button>
+  </footer><section class="comment_form">
   
-    <button class="button" id="comment-form-submit">
-      Submit
-    </button>
+  
+  
+    
+  
 
-</form>
+  <a id="comment-form"></a>
+  <h3>Say something</h3>
 
-<article class="modal">
-  <div>
-    <h3 class="modal-title js-modal-title"></h3>
-  </div>
-  <div class="mdl-card__supporting-text js-modal-text"></div>
-  <div class="mdl-card__actions mdl-card--border">
-    <button class="button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
-  </div>
-</article>
+  <form class="js-form form" method="POST" action="https://commentz.herokuapp.com/v2/entry/syedzayyan/syedzayyan.github.io/main/comments">
+    <input type="hidden" name="options[redirect]" value="https://syedzayyan.com/posts/raspi-weather-station/#post-submitted">
+    <input type="hidden" name="options[redirectError]" value="https://syedzayyan.com/posts/raspi-weather-station/#post-error">
+    <input type="hidden" name="options[entryId]" value="raspi-weather-station">
+    <input type="hidden" name="options[slug]" value="https://syedzayyan.com/posts/raspi-weather-station/">
+    <input type="hidden" name="options[origin]" value="https://syedzayyan.com/posts/raspi-weather-station/">
+    <input type="hidden" name="options[parent]" value="raspi-weather-station">
+    <input type="hidden" name="fields[reply_to]" value="">
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" >
-  <symbol id="icon-loading" viewBox="149.8 37.8 499.818 525"><path d="M557.8 187.8c13.8 0 24.601-10.8 24.601-24.6S571.6 138.6 557.8 138.6s-24.6 10.8-24.6 24.6c0 13.2 10.8 24.6 24.6 24.6zm61.2 90.6c-16.8 0-30.6 13.8-30.6 30.6s13.8 30.6 30.6 30.6 30.6-13.8 30.6-30.6c.6-16.8-13.2-30.6-30.6-30.6zm-61.2 145.2c-20.399 0-36.6 16.2-36.6 36.601 0 20.399 16.2 36.6 36.6 36.6 20.4 0 36.601-16.2 36.601-36.6C595 439.8 578.2 423.6 557.8 423.6zM409 476.4c-24 0-43.2 19.199-43.2 43.199s19.2 43.2 43.2 43.2 43.2-19.2 43.2-43.2S433 476.4 409 476.4zM260.8 411c-27 0-49.2 22.2-49.2 49.2s22.2 49.2 49.2 49.2 49.2-22.2 49.2-49.2-22.2-49.2-49.2-49.2zm-10.2-102c0-27.6-22.8-50.4-50.4-50.4-27.6 0-50.4 22.8-50.4 50.4 0 27.6 22.8 50.4 50.4 50.4 27.6 0 50.4-22.2 50.4-50.4zm10.2-199.8c-30 0-54 24-54 54s24 54 54 54 54-24 54-54-24.6-54-54-54zM409 37.8c-35.4 0-63.6 28.8-63.6 63.6S374.2 165 409 165s63.6-28.8 63.6-63.6-28.2-63.6-63.6-63.6z"/>
-  </symbol>
-</svg>
+    <fieldset>
+      <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your Name (required)">
+    </fieldset>
 
-<script>
-'use strict';
+    <fieldset>
+      <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your Email (optional)">
+    </fieldset>
+
+    <fieldset>
+      <textarea name="fields[body]" class="post-comment-field" placeholder="Markdown Accepted" rows="10"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
+      <input type="reset" class="post-comment-field btn btn-info" value="Reset">
+    </fieldset>
+
+  </form>
 
 
-
-var addComment = function() {
-
-  var select = function(s) {
-    return document.querySelector(s);
-  };
-
-  var I = function(id) {
-    return document.getElementById(id);
-  };
-
-  var submitButton = select("#comment-form-submit");
-
-  var form = select('.js-form');
-  form.doReset = function() {
-    submitButton.innerHTML = "Submit";
-    this.classList.remove('disabled');
-    if (window.grecaptcha) {
-      grecaptcha.reset();
-    }
-  };
-
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    submitButton.innerHTML =
-      '<svg class="icon spin"><use xlink:href="#icon-loading"></use></svg> Sending...';
-
-    var errorHandler = function(title, err) {
-      console.log(err);
-      var ecode = err.errorCode || "unknown";
-      showModal(title, 'An error occured.<br>[' + ecode + ']');
-      form.doReset();
-    }
-
-    form.classList.add('disabled');
-
-    fetch(this.getAttribute('action'), {
-      method: 'POST',
-      body: new URLSearchParams(new FormData(this)),
-      headers: new Headers({'content-type': 'application/x-www-form-urlencoded'})
-    }).then(
-      function (data) {
-        if (data.ok) {
-          showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/syedzayyan/syedzayyan.github.io/pulls">pending</a>. It will appear when approved.');
-          form.reset();
-          form.doReset();
-        } else {
-          data.json().then(function(err) {
-            errorHandler('Server Error', err);
-          });
-        }
+  
+  <script type="text/javascript">
+    function enableBtn(){
+       document.getElementById("submit_button").disabled = false;
       }
-    ).catch(function (err) {
-      console.error(err);
-      errorHandler('Unexpected Error', err);
-    });
+  </script>
 
-  });
+  <div id="post-submitted" class="dialog">
+    <h3>Thank you</h3>
+    <p>Your post has been submitted and will be published once it has been approved.</p>
+    
+    <p><a href="/" class="btn">OK</a></p>
+  </div>
 
-  select('.js-close-modal').addEventListener('click', function () {
-    select('body').classList.remove('show-modal');
-  });
+  <div id="post-error" class="dialog">
+    <h3>OOPS!</h3>
+    <p>Your post has not been submitted.  Please return to the page and try again.  Thank You!</p>
+    <p>If this error persists, please open an issue by <a href=""> clicking here</a>.</p>
+    <p><a href="#" class="btn">OK</a></p>
+  </div> 
 
-  function showModal(title, message) {
-    select('.js-modal-title').innerText = title;
-    select('.js-modal-text').innerHTML = message;
-    select('body').classList.add('show-modal');
-  }
+</section>
+<section class="post-comments">
 
   
   
   
+    
   
 
-  return {
-
+  
     
     
+      <h3></h3>
     
-    moveForm: function(commId, respondId, parentUid) {
-      var t           = this;
-      var comm        = I( commId );                                
-      var respond     = I( respondId );                             
-      var cancel      = I( 'cancel-comment-reply-link' );           
-      var parentuidF  = I( 'comment-replying-to-uid' );             
-
-      if ( ! comm || ! respond || ! cancel || ! parentuidF ) {
-        return;
-      }
-
-      t.respondId = respondId;
-
-      if ( ! I( 'sm-temp-form-div' ) ) {
-        var div = document.createElement('div');
-        div.id = 'sm-temp-form-div';
-        div.style.display = 'none';
-        respond.parentNode.insertBefore(div, respond); 
-      }
-
-      comm.parentNode.insertBefore( respond, comm.nextSibling );  
-      parentuidF.value = parentUid;
-      cancel.style.display = '';                        
-
-      cancel.onclick = function() {
-        var temp    = I( 'sm-temp-form-div' );            
-        var respond = I( t.respondId );                   
-
-        if ( !temp || !respond ) {
-          return;
-        }
-
-        I('comment-replying-to-uid').value = null;
-        temp.parentNode.insertBefore(respond, temp);  
-        temp.parentNode.removeChild(temp);            
-        this.style.display = 'none';                  
-        this.onclick = null;                          
-        return false;
-      };
-
-      I('comment-form-message').focus();
-
-      return false;
-    }
-  }
-}();
-</script>
-<section class="page__comments comments post-comments">
-  <h2>Comments</h2>
-
   
-  
-  <div class = "comments__existing">
-  
-  </div>
-
-  
-    <p>Nothing yet.</p>
+    
+    
   
 </section>
 
 <script>
+
 function changeValue(elementName, newValue){
-  document.getElementsByName(elementName)[0].value=newValue;
-};
+    document.getElementsByName(elementName)[0].value=newValue;
+  };
 </script>
 </article>
     </main>
