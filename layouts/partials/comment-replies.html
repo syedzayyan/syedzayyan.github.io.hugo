@@ -1,0 +1,21 @@
+{{ range $index, $comments := (index $.SiteDataComments_parent $.entryId_parent ) }}
+  {{ if eq .replying_to_uid $.parentId }}
+      <div class="comments-reply">
+        <div class="post-comment-header">
+          <div class="comment__author">
+            {{if eq "Syed Zayyan Masud" .name}}
+              <span class="comment__admin_tag">Author</span>
+              <span>{{ .name }}</span>
+            
+            {{ else }}
+            <span>{{ .name }}</span>
+            {{ end }}
+            <span class="comment__date"><br>{{ dateFormat "Monday, Jan 2, 2006" .date }}</span>
+          </div>
+        <div>
+                <div class="comment__body">
+        {{ .message | markdownify }}
+        </div>
+      </div>
+  {{ end }}
+{{ end }}

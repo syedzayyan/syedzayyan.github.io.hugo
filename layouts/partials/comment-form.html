@@ -1,0 +1,188 @@
+<form class="js-form form" method="post" action="{{ .Site.Params.staticman_api }}">
+<a id="comment-form"></a>
+  <input type="hidden" name="options[origin]" value="">
+  <input type="hidden" name="options[parent]" value="">
+  <input type="hidden" id="comment-replying-to-uid" name="fields[replying_to_uid]" value="">
+  <input type="hidden" name="options[slug]" value=>
+
+  <div class="textfield">
+    <label for="comment-form-message"><h2>Add Comment</h2>
+      <textarea class="textfield__input" name="fields[message]" type="text" id="comment-form-message" placeholder="Your comment (markdown accepted)" required rows="6"></textarea>
+    </label>
+  </div>
+
+    <div class="textfield narrowfield">
+      <label for="comment-form-name">Name
+        <input class="textfield__input" name="fields[name]" type="text" id="comment-form-name" placeholder="Your name (required)" required/>
+      </label>
+    </div>
+
+    <div class="textfield narrowfield">
+      <label for="comment-form-email">E-mail
+        <input class="textfield__input" name="fields[email]" type="email" id="comment-form-email" placeholder="Your email (optional)"/>
+      </label>
+    </div>
+
+    <div class="textfield narrowfield hp">
+      <label for="hp">
+        <input class="textfield__input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
+      </label>
+    </div>
+
+
+    <button type="button" class="button" id="cancel-comment-reply-link" style="display: none">
+      Cancel Reply
+    </button>
+  
+    <button class="button" id="comment-form-submit">
+      Submit
+    </button>
+
+</form>
+
+<article class="modal">
+  <div>
+    <h3 class="modal-title js-modal-title"></h3>
+  </div>
+  <div class="mdl-card__supporting-text js-modal-text"></div>
+  <div class="mdl-card__actions mdl-card--border">
+    <button class="button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-close-modal">Close</button>
+  </div>
+</article>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" >
+  <symbol id="icon-loading" viewBox="149.8 37.8 499.818 525"><path d="M557.8 187.8c13.8 0 24.601-10.8 24.601-24.6S571.6 138.6 557.8 138.6s-24.6 10.8-24.6 24.6c0 13.2 10.8 24.6 24.6 24.6zm61.2 90.6c-16.8 0-30.6 13.8-30.6 30.6s13.8 30.6 30.6 30.6 30.6-13.8 30.6-30.6c.6-16.8-13.2-30.6-30.6-30.6zm-61.2 145.2c-20.399 0-36.6 16.2-36.6 36.601 0 20.399 16.2 36.6 36.6 36.6 20.4 0 36.601-16.2 36.601-36.6C595 439.8 578.2 423.6 557.8 423.6zM409 476.4c-24 0-43.2 19.199-43.2 43.199s19.2 43.2 43.2 43.2 43.2-19.2 43.2-43.2S433 476.4 409 476.4zM260.8 411c-27 0-49.2 22.2-49.2 49.2s22.2 49.2 49.2 49.2 49.2-22.2 49.2-49.2-22.2-49.2-49.2-49.2zm-10.2-102c0-27.6-22.8-50.4-50.4-50.4-27.6 0-50.4 22.8-50.4 50.4 0 27.6 22.8 50.4 50.4 50.4 27.6 0 50.4-22.2 50.4-50.4zm10.2-199.8c-30 0-54 24-54 54s24 54 54 54 54-24 54-54-24.6-54-54-54zM409 37.8c-35.4 0-63.6 28.8-63.6 63.6S374.2 165 409 165s63.6-28.8 63.6-63.6-28.2-63.6-63.6-63.6z"/>
+  </symbol>
+</svg>
+
+<script>
+'use strict';
+
+// Static comments
+// originally sourced from: https://github.com/eduardoboucas/popcorn/blob/gh-pages/js/main.js
+var addComment = function() {
+
+  var select = function(s) {
+    return document.querySelector(s);
+  };
+
+  var I = function(id) {
+    return document.getElementById(id);
+  };
+
+  var submitButton = select("#comment-form-submit");
+
+  var form = select('.js-form');
+  form.doReset = function() {
+    submitButton.innerHTML = "Submit";
+    this.classList.remove('disabled');
+    if (window.grecaptcha) {
+      grecaptcha.reset();
+    }
+  };
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    submitButton.innerHTML =
+      '<svg class="icon spin"><use xlink:href="#icon-loading"></use></svg> Sending...';
+
+    var errorHandler = function(title, err) {
+      console.log(err);
+      var ecode = err.errorCode || "unknown";
+      showModal(title, 'An error occured.<br>[' + ecode + ']');
+      form.doReset();
+    }
+
+    form.classList.add('disabled');
+
+    fetch(this.getAttribute('action'), {
+      method: 'POST',
+      body: new URLSearchParams(new FormData(this)),
+      headers: new Headers({'content-type': 'application/x-www-form-urlencoded'})
+    }).then(
+      function (data) {
+        if (data.ok) {
+          showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/syedzayyan/syedzayyan.github.io/pulls">pending</a>. It will appear when approved.');
+          form.reset();
+          form.doReset();
+        } else {
+          data.json().then(function(err) {
+            errorHandler('Server Error', err);
+          });
+        }
+      }
+    ).catch(function (err) {
+      console.error(err);
+      errorHandler('Unexpected Error', err);
+    });
+
+  });
+
+  select('.js-close-modal').addEventListener('click', function () {
+    select('body').classList.remove('show-modal');
+  });
+
+  function showModal(title, message) {
+    select('.js-modal-title').innerText = title;
+    select('.js-modal-text').innerHTML = message;
+    select('body').classList.add('show-modal');
+  }
+
+  // Staticman comment replies, from https://github.com/mmistakes/made-mistakes-jekyll
+  // modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
+  // Released under the GNU General Public License - https://wordpress.org/about/gpl/
+  // addComment.moveForm is called from comment.html when the reply link is clicked.
+
+  return {
+
+    // commId - the id attribute of the comment replied to (e.g., "comment-10")
+    // respondId - the string 'respond', I guess
+    // parentUid - the UID of the parent comment
+    moveForm: function(commId, respondId, parentUid) {
+      var t           = this;
+      var comm        = I( commId );                                // whole comment
+      var respond     = I( respondId );                             // whole new comment form
+      var cancel      = I( 'cancel-comment-reply-link' );           // whole reply cancel link
+      var parentuidF  = I( 'comment-replying-to-uid' );             // a hidden element in the comment
+
+      if ( ! comm || ! respond || ! cancel || ! parentuidF ) {
+        return;
+      }
+
+      t.respondId = respondId;
+
+      if ( ! I( 'sm-temp-form-div' ) ) {
+        var div = document.createElement('div');
+        div.id = 'sm-temp-form-div';
+        div.style.display = 'none';
+        respond.parentNode.insertBefore(div, respond); // create and insert a bookmark div right before comment form
+      }
+
+      comm.parentNode.insertBefore( respond, comm.nextSibling );  // move the form from the bottom to above the next sibling
+      parentuidF.value = parentUid;
+      cancel.style.display = '';                        // make the cancel link visible
+
+      cancel.onclick = function() {
+        var temp    = I( 'sm-temp-form-div' );            // temp is the original bookmark
+        var respond = I( t.respondId );                   // respond is the comment form
+
+        if ( !temp || !respond ) {
+          return;
+        }
+
+        I('comment-replying-to-uid').value = null;
+        temp.parentNode.insertBefore(respond, temp);  // move the comment form to its original location
+        temp.parentNode.removeChild(temp);            // remove the bookmark div
+        this.style.display = 'none';                  // make the cancel link invisible
+        this.onclick = null;                          // retire the onclick handler
+        return false;
+      };
+
+      I('comment-form-message').focus();
+
+      return false;
+    }
+  }
+}();
+</script>
