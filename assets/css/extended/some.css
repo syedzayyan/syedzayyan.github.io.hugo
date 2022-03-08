@@ -1,7 +1,6 @@
 .post-comments {
   margin-top: 60px;
 }
-
 .post-comment {
   padding: 10px;
   margin-top: 10px;
@@ -10,7 +9,6 @@
 }
 
 .post-comment-reply {
-
   padding: 10px;
   margin-top: 10px;
   margin-left: 4em;
@@ -43,13 +41,20 @@
 .post-comment-field {
   display: block;
   font: inherit;
-  padding: 10px;
-  margin-top: 20px;
-  outline-color: #F76C5E;
-  width: 100%;
-  color:var(--content)
+  border: var(--border);
+  color:var(--content);
 }
-
+.js-form fieldset{
+  border:1px solid var(--content);
+  border-radius: 5px;
+  margin: 10px;
+}
+.js-form fieldset:last-child{
+  border:none;
+}
+.comment-area{
+  width: 100%;
+}
 .post-comment-reply-button {
   margin-top: 10px;
   float: right;
@@ -89,8 +94,15 @@
   color: var(--content);
   display: inline-block;
   font: inherit;
-  padding: 10px;
-  min-width: 10 0px;
+  box-shadow: 0 2px 2px 2px var(--border);
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 4px 0px 0px 0px;
   -webkit-appearance: none;
 }
 
@@ -99,8 +111,15 @@
   color: var(--content);
   display: inline-block;
   font: inherit;
-  padding: 10px;
-  min-width: 50px;
+  box-shadow: 0 2px 2px 2px var(--border);
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 4px 0px 0px 0px;
   -webkit-appearance: none;
 }
 
@@ -112,7 +131,7 @@
 .dialog {
   display: none;
   position: fixed;
-  background-color: rgba(238, 238, 238, 1);
+  background-color:var(--theme);
   padding: 25px;
   padding-top: 20%;
   top: 0;
