@@ -96,7 +96,7 @@ params:
           url: "index.xml"    
 
     editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+        URL: "https://github.com/syedzayyan/syedzayyan.github.io/tree/main/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
     staticman_api: "https://commentz.herokuapp.com/v2/entry/syedzayyan/syedzayyan.github.io/main/comments"
