@@ -20,8 +20,8 @@ another try.
 I got inspired to build a weather station from this Reddit [post](https://www.reddit.com/r/raspberry_pi/comments/nrus9l/i_too_built_uteharguss_weather_station_and_it_is/). I got onto Pi Hut again. I bought:
 
 - [A header, because I didn’t have headers on my Pi](https://thepihut.com/products/gpio-header-for-raspberry-pi-a-b-pi-2-pi-3-pi-4-zero)
-- [An LCD display, A 1.14 inch tiny WaveShare LCD display]()
-- [A network HAT](https://thepihut.com/products/1-14-ips-lcd-display-module-240x135?variant=39693670252739)
+- [An LCD display, A 1.14 inch tiny WaveShare LCD display](https://thepihut.com/products/1-14-ips-lcd-display-module-240x135?variant=39693670252739)
+- [A network HAT](https://thepihut.com/products/ethernet-and-usb-hub-hat-for-raspberry-pi?variant=31844897488958)
 - [An ethernet cable](https://thepihut.com/products/rj45-cat5e-ethernet-lan-cable-2m-black?variant=20063167578174)
 - [A cute little fan](https://thepihut.com/products/miniature-5v-cooling-fan-for-raspberry-pi-and-other-computers?variant=31955934417)
 

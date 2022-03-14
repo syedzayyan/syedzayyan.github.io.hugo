@@ -1,5 +1,5 @@
 ---
-title:  "Errors I came across adding Staticman to my Jekyll Blog for a Comment System"
+title:  "Errors I came across adding Staticman to my ❌Jekyll❌ Hugo Blog for a Comment System"
 date: 2022-02-23 11:22:01 +0000
 tags: ["tutorial"]
 ---
@@ -19,3 +19,11 @@ In your staticman.yml file there will be a "branch" configuration. If you want t
 Bottom line is read your tutorials properly and don't be like me and waste 2 days worth of your time. Well if you have found this article you are already like me I suppose. 
 
 :) xx
+
+## Update: **14th March 2022**
+
+I have since switched to a Hugo blog. I couldn't get the strikthrough syntax to work, you can tell by the ugly title. If you have any ideas make a pull request, email me or  I don't know really. For setting up staticman with Hugo I followed ze [tutorial](https://dancwilliams.com/hugo-staticman-nested-replies-and-email-notifications/). This blog's code is open source anyways, urmmm you could if you like change the css :). I basically copied the commenting CSS from Dan's older blog, just changed the CSS variables to suit this blog.
+
+There are some more errors I made along the way, like trying to code my own form. Which was a big mistake. I'd say, start with a simple enough form like the one I cited and then maybe change the code from there. I started with my Jekyll form, which was not the best of ideas. Start simple is another advice I could give.
+
+:) xxx
