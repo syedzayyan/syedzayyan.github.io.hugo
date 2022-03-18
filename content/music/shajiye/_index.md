@@ -3,7 +3,7 @@ title: "Shajiye EP"
 ---
 
 ### Shajiye
-<audio controls>
+<audio controls="controls" controls="download">
   <source src="audio/shajiye.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -24,7 +24,7 @@ title: "Shajiye EP"
 শুনবে কি আমায়<br>
 
 ### Dream
-<audio controls>
+<audio controls="controls" controls="download">
   <source src="audio/dreams.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -48,7 +48,7 @@ Hmmmmm Humanise<br>
 Hmmmmm Paradise<br>
 
 ### Circle
-<audio controls>
+<audio controls="controls" controls="download">
   <source src="audio/the_stars.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
