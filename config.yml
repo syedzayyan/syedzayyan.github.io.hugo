@@ -23,13 +23,19 @@ languages:
             main:
                 - name: About
                   url: about/
-                  weight: 5
+                  weight: 1
                 - name: Search
                   url: search/
-                  weight: 10
+                  weight: 2
                 - name: Tags
                   url: tags/
-                  weight: 10
+                  weight: 3
+                - name: Projects
+                  url: projects/
+                  weight: 4
+                - name: Music
+                  url: music/
+                  weight: 5
 
 outputs:
     home:

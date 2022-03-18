@@ -148,6 +148,16 @@
                     <span>Tags</span>
                 </a>
             </li>
+            <li>
+                <a href="https://syedzayyan.com/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://syedzayyan.com/music/" title="Music">
+                    <span>Music</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -190,13 +200,13 @@
 </div>
 
   <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
-<p>I got my Raspberry Pi Zero W last year. Since then it had been 
+<p>I got my Raspberry Pi Zero W last year. Since then it had been
 collecting dust. I should have considered my experience with programming
-and the few stints that had happened along the way before making such 
-an impulse buy. But, hey! That&rsquo;s why they are called impulses. However, 
-COVID happened, and Coursera was almost free for half the year. I 
-enrolled in a bunch of courses, I built a few things along the way, 
-including the website you are on right now. I thought of giving the Pi 
+and the few stints that had happened along the way before making such
+an impulse buy. But, hey! That&rsquo;s why they are called impulses. However,
+COVID happened, and Coursera was almost free for half the year. I
+enrolled in a bunch of courses, I built a few things along the way,
+including the website you are on right now. I thought of giving the Pi
 another try.</p>
 <h1 id="the-shopping">The Shopping<a hidden class="anchor" aria-hidden="true" href="#the-shopping">#</a></h1>
 <p>I got inspired to build a weather station from this Reddit <a href="https://www.reddit.com/r/raspberry_pi/comments/nrus9l/i_too_built_uteharguss_weather_station_and_it_is/">post</a>. I got onto Pi Hut again. I bought:</p>
@@ -209,22 +219,22 @@ another try.</p>
 </ul>
 <h1 id="tan-tan-tana-problem">Tan tan tana!! Problem.<a hidden class="anchor" aria-hidden="true" href="#tan-tan-tana-problem">#</a></h1>
 <p>A very ultra silly mistake too. I didn’t have a soldering iron. Don’t
-be me and try to bend the around pins by hand. The contacts are 
-unstable and it just does not work. I did not take a picture to torture 
-your eyes and partly because I did not plan that I was going to make a 
-blog post. And the project got side-lined. I got busy doing other 
+be me and try to bend the around pins by hand. The contacts are
+unstable and it just does not work. I did not take a picture to torture
+your eyes and partly because I did not plan that I was going to make a
+blog post. And the project got side-lined. I got busy doing other
 things. But on Prime Day, Pi Hut also offered free delivery.</p>
 <h1 id="solution-">Solution ?<a hidden class="anchor" aria-hidden="true" href="#solution-">#</a></h1>
 <p>Luckily there are these <a href="https://thepihut.com/products/gpio-hammer-header-solderless?variant=28950933073">hammer headers</a>
-for people like me who can’t solder to save their lives. If you don’t 
+for people like me who can’t solder to save their lives. If you don’t
 like the sound of hammering your Pi, buy them with pre-soldered headers.
 Again don’t be me.</p>
 <h1 id="the-coding-phase">The coding phase<a hidden class="anchor" aria-hidden="true" href="#the-coding-phase">#</a></h1>
-<p>I thought I could copy the code from u/tehargus, with some minor 
-adjustments. But being the miser I am I bought a different cheaper mini 
-LCD display. Fortunately Waveshare had a bunch of guides on their 
-website, and I ditched the code from u/tehargus. 
-The <a href="https://github.com/syedzayyan/pi_weather">code</a> is pretty self explanatory. It has an infinite loop up top that runs every 
+<p>I thought I could copy the code from u/tehargus, with some minor
+adjustments. But being the miser I am I bought a different cheaper mini
+LCD display. Fortunately Waveshare had a bunch of guides on their
+website, and I ditched the code from u/tehargus.
+The <a href="https://github.com/syedzayyan/pi_weather">code</a> is pretty self explanatory. It has an infinite loop up top that runs every
 100 seconds. It consumes the Open Weather API and prints the contents to
 the screen. Specifically the:</p>
 <ul>
@@ -242,30 +252,30 @@ the screen. Specifically the:</p>
 <li>LONGITUDE</li>
 </ul>
 <p>At the end of the loop there&rsquo;s a 100 second sleep because in the free
-version Open Weather only allows 1000 API calls a day. If I did my 
+version Open Weather only allows 1000 API calls a day. If I did my
 calculation right 100 seconds intervals should be enough.
 Perks of copying code</p>
-<p>The folder structure is complicated. I know. Font and Lib came from 
-Waveshare tutorials. I didn’t touch it because I was scared to break 
-things again. The pic folder contains the pictures from OpenWeather to 
+<p>The folder structure is complicated. I know. Font and Lib came from
+Waveshare tutorials. I didn’t touch it because I was scared to break
+things again. The pic folder contains the pictures from OpenWeather to
 be displayed. The main folder contains main.py with the actual code. You
 can tinker around if you’d like. :)
 Here’s the finished product.</p>
 <p><img loading="lazy" src="/images/whole.jpg" alt="Pi Weather Box"  />
 </p>
 <h1 id="the-case">The case.<a hidden class="anchor" aria-hidden="true" href="#the-case">#</a></h1>
-<p>You might be asking why it’s in a Seagate One Touch Hard Disk box, 
-with a fan and ethernet port that only consumes an API. Because it’s 
+<p>You might be asking why it’s in a Seagate One Touch Hard Disk box,
+with a fan and ethernet port that only consumes an API. Because it’s
 connected to a 2TB hard drive that’s inside. Here’s a sneak peak.</p>
 <p><img loading="lazy" src="/images/inside-peak.jpg" alt="Sneak Peak in Pi Weather Box"  />
 </p>
 <h1 id="poorly-written-golang">Poorly written Golang<a hidden class="anchor" aria-hidden="true" href="#poorly-written-golang">#</a></h1>
 <p>The Pi also runs an HTTP File server I wrote in Golang. Here’s
 the <a href="https://github.com/syedzayyan/pi-file-server">code</a> for it. Maybe I’d write about it some other day when I am well
-versed with Golang. But in short it has a bunch of API endpoints that 
-can be used for reading, putting and deleting files on the disk. A 
+versed with Golang. But in short it has a bunch of API endpoints that
+can be used for reading, putting and deleting files on the disk. A
 SvelteJS frontend consumes those APIs.
-So, if you have a Pi, don’t let it collect dust. It’s a powerful 
+So, if you have a Pi, don’t let it collect dust. It’s a powerful
 little machine that can do just about anything you can imagine. Probably
 not running your machine learning algorithms, but a weather station is a
 start!</p>
