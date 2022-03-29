@@ -9,6 +9,8 @@ layout: "cv"
 
 [For a CV, Click Here](/cv). This is a bunch of words.
 
+### About Me in my broken words.
+
 Hi! I am Zayyan. I do not like writing about myself a lot. Mostly because I don't know how to talk about myself. I am intrigued by most things in the world and at some point it seems like I am boasting my experiences. But this is an About page and I guess that is why you are here. To know about me.
 
 Currently I am in a BSc program studying Pharmacology and Innovative Therapeutics. Basically, I make drugs or learn to make them. It's a lot of poking cells to see what drugs work in the lab, taking beautiful pictures of these cells under the "influence" and writing about them in journals. Mostly it's exciting, just not when a Western Blot fails after 2 painstaking days of work. Okay fine 1. But even then failed experiments feel bad but you bounce back like life.
@@ -20,3 +22,17 @@ I know big jumps between the last two things and makes me a big nerd. I do play 
 Okay last one, I read books too. This one only started in the lockdown. This is a new habbit. I hated reading books before, now I can't live without them. Currently I am reading, hopefully not for long, Crime and Punishment by you know who. If you don't please Google.
 
 I will inadvertently make mistakes. See what I did there? Correct me, in Github issues or just drop me an email
+
+### Hobby Projects
+
+- [I made this well plate layout maker](https://syedzayyan.com/wellplate/#/). If you are a biological scientist, lab guy you came across well plates. Sometimes you need to make layouts to remember what to put where. For those times this is a new way of doing things instead of printing out a layout and writing (boring!)
+
+- [A raspberry pi file server](https://github.com/syedzayyan/pi-file-server). This was a fun project to do with my raspberry pi. Basically Google Photos became a paid service and I went self hosted. But eh! It became a nightmare pretty soon running the Pi all the time, plus the UI implementation I would say was not the best. I was learning Go for the first time too.
+
+### Music
+
+They are everywhere!
+
+[Spotify](https://open.spotify.com/artist/2ooLo1eEuSgsSKhUqBArHr)<br>
+[Youtube](https://www.youtube.com/channel/UCV5BPrngFODD_vv73Z32EWQ)<br>
+[Apple Music](https://music.apple.com/us/artist/zayyan/1588272905)<br>

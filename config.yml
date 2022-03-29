@@ -30,12 +30,6 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 3
-                - name: Projects
-                  url: projects/
-                  weight: 4
-                - name: Music
-                  url: music/
-                  weight: 5
 
 outputs:
     home:
