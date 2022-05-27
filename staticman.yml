@@ -11,7 +11,7 @@ comments:
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  allowedOrigins: ["syedzayyan.com", "syedzayyan.github.io", "localhost:3000"]
+  allowedOrigins: ["syedzayyan.com", "syedzayyan.github.io", "localhost"]
 
   # (*) REQUIRED
   #
